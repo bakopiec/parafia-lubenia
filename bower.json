@@ -1,0 +1,19 @@
+{
+  "name": "parafia-lubenia",
+  "description": "Strona parafi Lubenia",
+  "main": "index.js",
+  "authors": [
+    "Barbara Kopiec"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "parafia",
+    "lubenia"
+  ],
+  "homepage": "https://github.com/bakopiec/parafia-lubenia.git",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "angular": "^1.7.6",
+    "angular-route": "^1.7.6"
+  }
+}

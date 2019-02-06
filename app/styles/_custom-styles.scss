@@ -1,0 +1,75 @@
+.margins-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.text-justify {
+    font-size: 20px;
+}
+
+#team {
+    .person {
+        text-align: center;
+
+        img {
+            width: 50%;
+        }
+
+        p {
+            color: $text-description-gray;
+        }
+    }
+}
+
+#contact {
+    h3 {
+        text-align: center;
+    }
+
+    #map {
+        background-color: $map-background;
+        width: 100%;
+        height: 400px;
+    }
+
+    .address {
+        padding-top: 50px;
+    }
+
+    .communication {
+        padding-top: 20px;
+
+        span {
+            color: $text-description-gray;
+        }
+    }
+}
+
+.footer {
+    background-color: $footer-background-color;
+    color: $footer-text-color;
+    text-align: center;
+
+    h5 {
+        padding-top: 15px;
+    }
+
+    .list-group-item {
+        background-color: $footer-background-color;
+        border-top: 0;
+        font-size: 12px;
+        padding: 0;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .footer-column-content {
+        text-align: left;
+    }
+
+    .footer-sign {
+        text-align: center;
+    }
+}

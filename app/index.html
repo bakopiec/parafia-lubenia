@@ -1,0 +1,49 @@
+<html ng-app="parafiaLubenia" lang="pl">
+	<head>
+		<base href="/">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Yachts Site</title>
+		<link rel="stylesheet" href="styles.css">
+		<script src="scripts.js" charset="utf-8"></script>
+	</head>
+	<body ng-controller="indexCtrl">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-4">
+					<nav class="navbar navbar-expand-lg navbar-light bg-light flex-row flex-nowrap">
+						<button class="navbar-toggler" type="button" data-toggle="collapse"
+								data-target="#yachtsNavbar" aria-controls="navbarNav" aria-expanded="false"
+								aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="yachtsNavbar">
+							<ul class="navbar-nav mr-auto flex-sm-column flex-row">
+								<li class="nav-item active">
+									<a class="nav-link" href="/">
+										Home<span class="sr-only">(current)</span>
+									</a>
+								</li>
+								<li class="navbar-nav mr-auto">
+									<a class="nav-link">
+										Test
+									</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+				<div class="col">
+					<ng-view></ng-view>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					© Wszelkie prawa zastrzeżone
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

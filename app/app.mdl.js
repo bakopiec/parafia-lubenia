@@ -1,0 +1,2 @@
+angular
+  .module('parafiaLubenia', ['ngRoute']);
