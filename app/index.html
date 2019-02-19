@@ -8,32 +8,31 @@
 		<script src="scripts.js" charset="utf-8"></script>
 	</head>
 	<body ng-controller="indexCtrl">
+		<nav>
+			<button ng-click="isOpen = true" ng-hide="isOpen"
+					class="sidebar-button btn btn-light" type="button">
+				<i class="fa fa-arrow-right"></i>
+			</button>
+			<div class="nav list-group" ng-class="{'active': isOpen}">
+				<a href="#" class="list-group-item list-group-item-action list-group-item-light">
+					Home
+				</a>
+				<a href="#" class="list-group-item list-group-item-action list-group-item-light">
+					Test0
+				</a>
+				<a href="#" class="list-group-item list-group-item-action list-group-item-light">
+					Test1
+				</a>
+				<a href="#" ng-click="isOpen = false"
+						class="list-group-item list-group-item-action list-group-item-light">
+					Close
+					<i class="fa fa-arrow-left"></i>
+				</a>
+			</div>
+		</nav>
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-lg-4">
-					<nav class="navbar navbar-expand-lg navbar-light bg-light flex-row flex-nowrap">
-						<button class="navbar-toggler" type="button" data-toggle="collapse"
-								data-target="#yachtsNavbar" aria-controls="navbarNav" aria-expanded="false"
-								aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-						</button>
-						<div class="collapse navbar-collapse" id="yachtsNavbar">
-							<ul class="navbar-nav mr-auto flex-sm-column flex-row">
-								<li class="nav-item active">
-									<a class="nav-link" href="/">
-										Home<span class="sr-only">(current)</span>
-									</a>
-								</li>
-								<li class="navbar-nav mr-auto">
-									<a class="nav-link">
-										Test
-									</a>
-								</li>
-							</ul>
-						</div>
-					</nav>
-				</div>
-				<div class="col">
+				<div class="col-12">
 					<ng-view></ng-view>
 				</div>
 			</div>
