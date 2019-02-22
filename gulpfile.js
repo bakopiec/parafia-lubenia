@@ -25,7 +25,11 @@ var paths = {
         'app/app.run.js',
         'app/app.conf.js',
         'app/core/index.ctrl.js',
-        'app/core/home/home.ctrl.js'
+        'app/core/home/home.ctrl.js',
+        'app/core/intention/intention.ctrl.js',
+        'app/core/preachs/preachs.ctrl.js',
+        'app/history/history.ctrl.js',
+        'app/contact/contact.ctrl.js'
     ],
     jsWatch: [
         'app/**/*.js'

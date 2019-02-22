@@ -1,5 +1,3 @@
 angular
   .module('parafiaLubenia')
-  .controller('homeCtrl', function() {
-      
-  });
+  .controller('homeCtrl', function() {});
