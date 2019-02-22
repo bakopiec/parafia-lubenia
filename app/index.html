@@ -8,32 +8,38 @@
 		<script src="scripts.js" charset="utf-8"></script>
 	</head>
 	<body ng-controller="indexCtrl">
-		<nav>
-			<button ng-click="isOpen = true" ng-hide="isOpen"
-					class="sidebar-button btn btn-light" type="button">
-				<i class="fa fa-arrow-right"></i>
-			</button>
-			<div class="nav list-group" ng-class="{'active': isOpen}">
-				<a href="#" class="list-group-item list-group-item-action list-group-item-light">
-					Home
-				</a>
-				<a href="#" class="list-group-item list-group-item-action list-group-item-light">
-					Test0
-				</a>
-				<a href="#" class="list-group-item list-group-item-action list-group-item-light">
-					Test1
-				</a>
-				<a href="#" ng-click="isOpen = false"
-						class="list-group-item list-group-item-action list-group-item-light">
-					Close
-					<i class="fa fa-arrow-left"></i>
-				</a>
+		<div class="row">
+			<div class="col-lg-3">
+				<nav>
+					<button ng-click="isOpen = true" ng-hide="isOpen"
+							class="sidebar-button btn btn-light" type="button">
+						<i class="fa fa-arrow-right"></i>
+					</button>
+					<div ng-class="{'active': isOpen}" class="nav list-group">
+						<a href="#" class="list-group-item list-group-item-action list-group-item-light">
+							Home
+						</a>
+						<a href="#" class="list-group-item list-group-item-action list-group-item-light">
+							Test0
+						</a>
+						<a href="#" class="list-group-item list-group-item-action list-group-item-light">
+							Test1
+						</a>
+						<a href="#" ng-click="isOpen = false"
+								class="list-group-item list-group-item-action list-group-item-light">
+							Close
+							<i class="fa fa-arrow-left"></i>
+						</a>
+					</div>
+				</nav>
 			</div>
-		</nav>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-12">
-					<ng-view></ng-view>
+			<div class="col">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-12">
+							<ng-view></ng-view>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
