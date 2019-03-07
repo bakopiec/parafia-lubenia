@@ -24,10 +24,17 @@ nav {
         }
 
         @include media-breakpoint-up(lg) { 
-            width: 250px !important;
+            width: 25% !important;
             margin-left: 0px !important;
         }
     }
+}
+
+.image-text-center {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    color: white;
 }
 
 .footer {

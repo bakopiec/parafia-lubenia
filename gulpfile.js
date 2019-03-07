@@ -4,8 +4,11 @@ var gulpConcat = require('gulp-concat');
 var gulpSass = require('gulp-sass');
 
 var paths = {
-    resources: [
+    fonts: [
         'bower_components/font-awesome/webfonts/**/*.*'
+    ],
+    images: [
+        'app/images/**/*.*'
     ],
     html: [
         'app/**/*.html'
@@ -36,9 +39,14 @@ var paths = {
     ]
 }
 
-gulp.task('resources', function() {
-    gulp.src(paths.resources)
+gulp.task('fonts', function() {
+    gulp.src(paths.fonts)
             .pipe(gulp.dest('dist/webfonts'));
+});
+
+gulp.task('images', function() {
+    gulp.src(paths.images)
+            .pipe(gulp.dest('dist/images'));
 });
 
 gulp.task('html', function() {
@@ -74,4 +82,4 @@ gulp.task('serve', function() {
     });
 });
 
-gulp.task('default', ['resources', 'html', 'sass', 'js', 'watch', 'serve']);
+gulp.task('default', ['fonts', 'images', 'html', 'sass', 'js', 'watch', 'serve']);
